@@ -90,7 +90,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-zinc-100 bg-white px-4 pb-4 pt-2 md:hidden">
+        <div className="max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-zinc-100 bg-white px-4 pb-4 pt-2 shadow-lg md:hidden">
           <ul className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => {
               const active = pathname === link.href;
