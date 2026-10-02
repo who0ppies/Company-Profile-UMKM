@@ -90,3 +90,13 @@ Sumber kanonis: `backend/product.json` (12 produk fashion UMKM).
 | GET | `/api/products` (backend `:5000`, frontend `/api/products`) | `kategori`, `q`, `limit` |
 | GET | `/api/products/:id` (backend) | - |
 | GET | `/health` (backend) | - |
+
+## Aturan Kolaborasi Git (ringkas)
+
+- `main` stabil (hanya PM yang merge) ← `develop` ← `feature/*` / `fix/*`.
+- Satu tugas = satu branch dari `develop` yang terbaru:
+  `git checkout develop && git pull && git checkout -b feature/nama-fitur`.
+- Commit konvensional (`feat:`, `fix:`, `style:`, `docs:`, `refactor:`),
+  minimal 3 commit per fitur. Dilarang: `update`, `asdf`, `revisi lagi`.
+- Push branch lalu buat PR ke `develop`; minimal 1 review sebelum merge.
+- Dilarang push langsung ke `main`.
