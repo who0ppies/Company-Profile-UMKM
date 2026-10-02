@@ -13,6 +13,8 @@ const STATS = [
   { value: "25+", label: "Pengrajin Mitra" },
   { value: "8Rb+", label: "Pelanggan" },
   { value: "34", label: "Provinsi Terjangkau" },
+];
+
 const VALUES = [
   {
     icon: HandHeart,
