@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "MAPIL — Brand Fashion Lokal UMKM",
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="id">
       <body className="min-h-screen bg-white text-zinc-900">
+        <Navbar />
         {children}
       </body>
     </html>
