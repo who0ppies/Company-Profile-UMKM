@@ -65,3 +65,28 @@ Buka `http://localhost:3000`. Build produksi: `npm run build`.
 - Beranda: `docs/screenshots/beranda.png`
 - Koleksi: `docs/screenshots/koleksi.png`
 - Tentang: `docs/screenshots/tentang.png`
+
+## Daftar Tugas Tim
+
+Dikelola PM. Status: `To Do` → `In Progress` → `Review` → `Done`.
+
+| No | Tugas | PIC | Status | Issue |
+|----|-------|-----|--------|-------|
+| 1 | Scaffold frontend + backend + product.json | FE | Done | - |
+| 2 | Navbar + halaman utama (hero) | FE | Review | PR #1 |
+| 3 | Katalog produk (filter/search/sortir) | FE | Review | PR #2 |
+| 4 | Halaman tentang | FE | Review | PR #3 |
+| 5 | Halaman toko + kontak + footer | FE | Review | PR #4 |
+| 6 | Animasi interaksi (Reveal/marquee) | FE | Review | PR #5 |
+| 7 | Bug: panel menu mobile tidak bisa di-scroll | FE | Review | #6 / PR #7 |
+| 8 | README + dokumentasi | FE | Review | PR #8 |
+
+## API Katalog
+
+Sumber kanonis: `backend/product.json` (12 produk fashion UMKM).
+
+| Method | URL | Query |
+|--------|-----|-------|
+| GET | `/api/products` (backend `:5000`, frontend `/api/products`) | `kategori`, `q`, `limit` |
+| GET | `/api/products/:id` (backend) | - |
+| GET | `/health` (backend) | - |
