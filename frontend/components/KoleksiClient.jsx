@@ -166,6 +166,16 @@ export default function KoleksiClient() {
           <p className="mt-1 text-sm text-zinc-500">
             Coba kata kunci atau kategori lain.
           </p>
+          <button
+            type="button"
+            onClick={() => {
+              setKeyword("");
+              setKategori("Semua");
+            }}
+            className="mt-4 rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-semibold text-white"
+          >
+            Reset Filter
+          </button>
         </div>
       ) : (
         <div className="mt-6 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
