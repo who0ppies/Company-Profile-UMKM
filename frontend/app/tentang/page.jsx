@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Leaf, HandHeart, BadgeCheck, ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "Tentang Kami — MAPIL",
@@ -11,6 +13,22 @@ const STATS = [
   { value: "25+", label: "Pengrajin Mitra" },
   { value: "8Rb+", label: "Pelanggan" },
   { value: "34", label: "Provinsi Terjangkau" },
+const VALUES = [
+  {
+    icon: HandHeart,
+    title: "Pemberdayaan Lokal",
+    text: "Setiap pembelian mendukung pengrajin, penjahit, dan komunitas kreatif di daerah.",
+  },
+  {
+    icon: BadgeCheck,
+    title: "Kualitas Terjamin",
+    text: "Kontrol kualitas tiga tahap memastikan setiap produk layak sampai ke tanganmu.",
+  },
+  {
+    icon: Leaf,
+    title: "Produksi Bertanggung Jawab",
+    text: "Bahan pilihan dan proses produksi efisien untuk jejak lingkungan yang lebih kecil.",
+  },
 ];
 
 export default function TentangPage() {
@@ -65,6 +83,51 @@ export default function TentangPage() {
           </div>
         ))}
       </dl>
+
+      <section className="mt-14">
+        <h2 className="text-xl font-bold sm:text-2xl">Nilai yang Kami Pegang</h2>
+        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          {VALUES.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-2xl border border-zinc-200 bg-white p-6"
+            >
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-zinc-900 text-white">
+                <item.icon size={20} />
+              </span>
+              <h3 className="mt-4 font-bold">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+                {item.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-14 rounded-3xl bg-zinc-900 px-6 py-12 text-center text-white sm:px-12">
+        <h2 className="text-2xl font-bold sm:text-3xl">
+          Siap Tampil Maksimal dengan Produk Lokal?
+        </h2>
+        <p className="mx-auto mt-3 max-w-xl text-sm text-zinc-300 sm:text-base">
+          Jelajahi koleksi terbaru kami atau kunjungi toko terdekat untuk
+          merasakan langsung kualitasnya.
+        </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <Link
+            href="/koleksi"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-zinc-900 transition-transform hover:scale-105"
+          >
+            Lihat Koleksi
+            <ArrowRight size={16} />
+          </Link>
+          <Link
+            href="/toko"
+            className="inline-flex items-center gap-2 rounded-full border border-zinc-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white"
+          >
+            Temukan Toko
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
