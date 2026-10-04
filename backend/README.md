@@ -1,6 +1,6 @@
-# MAPIL Backend — Mini-API Katalog Produk
+# Git Store Backend — Mini-API Katalog Produk
 
-Sumber data tunggal katalog produk UMKM MAPIL (`product.json`), disajikan lewat Express.
+Sumber data tunggal katalog produk UMKM Git Store (`product.json`), disajikan lewat Express.
 
 ## Endpoint
 

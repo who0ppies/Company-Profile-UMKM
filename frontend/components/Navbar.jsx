@@ -38,7 +38,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="text-xl font-bold tracking-tight">
-          MAPIL
+          Git Store
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex" aria-label="Navigasi utama">

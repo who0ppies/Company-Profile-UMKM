@@ -16,7 +16,7 @@ function loadCatalog() {
 }
 
 app.get("/health", (req, res) => {
-  res.json({ status: "ok", service: "mapil-backend" });
+  res.json({ status: "ok", service: "git-store-backend" });
 });
 
 app.get("/api/products", (req, res) => {
@@ -62,5 +62,5 @@ app.get("/api/products/:id", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`mapil-backend berjalan di http://localhost:${PORT}`);
+  console.log(`git-store-backend berjalan di http://localhost:${PORT}`);
 });

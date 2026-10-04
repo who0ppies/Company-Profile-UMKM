@@ -16,7 +16,7 @@ export default function Footer() {
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-900 dark:bg-yellow-400 text-sm font-bold text-white dark:text-zinc-950">
               M
             </span>
-            <span className="text-lg font-bold tracking-tight">MAPIL</span>
+            <span className="text-lg font-bold tracking-tight">Git Store</span>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
             Brand fashion lokal dari pengrajin Indonesia. Bangga buatan
@@ -47,7 +47,7 @@ export default function Footer() {
             Hubungi Kami
           </h3>
           <ul className="mt-4 space-y-2.5 text-sm text-zinc-600 dark:text-zinc-400">
-            <li>halo@mapil.id</li>
+            <li>halo@gitstore.id</li>
             <li>+62 812-3456-7890</li>
             <li>Jl. Pengrajin No. 12, Bandung</li>
           </ul>
@@ -56,7 +56,7 @@ export default function Footer() {
 
       <div className="border-t border-zinc-100 dark:border-zinc-900">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-zinc-500 dark:text-yellow-400 sm:flex-row sm:px-6">
-          <p>© 2026 MAPIL — KodeKita Studio. Bangga Buatan Indonesia.</p>
+          <p>© 2026 Git Store — KodeKita Studio. Bangga Buatan Indonesia.</p>
           <p>Dibuat oleh Tim Front-End RPL Kelas XI</p>
         </div>
       </div>

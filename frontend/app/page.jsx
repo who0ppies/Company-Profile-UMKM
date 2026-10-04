@@ -8,7 +8,7 @@ const PRINSIP = [
   {
     no: "01",
     title: "Desain Abadi",
-    text: "Setiap potongan MAPIL dirancang untuk bertahan lebih lama dari tren musiman, dengan siluet yang bersih dan proporsi yang tenang.",
+    text: "Setiap potongan Git Store dirancang untuk bertahan lebih lama dari tren musiman, dengan siluet yang bersih dan proporsi yang tenang.",
   },
   {
     no: "02",
@@ -41,7 +41,7 @@ export default function HomePage() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600&auto=format&fit=crop"
-          alt="Koleksi fashion MAPIL"
+          alt="Koleksi fashion Git Store"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-white/60 dark:bg-black/60" />
@@ -58,7 +58,7 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 max-w-xl text-zinc-700 dark:text-zinc-300">
-              MAPIL adalah rumah baju dan fashion lokal kontemporer — bahan
+              Git Store adalah rumah baju dan fashion lokal kontemporer — bahan
               pilihan, jahitan pengrajin, dan desain yang tenang namun tegas.
             </p>
           </Reveal>
@@ -71,7 +71,7 @@ export default function HomePage() {
                 Jelajahi Koleksi <ArrowRight size={16} />
               </Link>
               <Link href="/tentang" className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 underline-offset-4 hover:underline">
-                Kisah MAPIL
+                Kisah Git Store
               </Link>
             </div>
           </Reveal>
@@ -89,7 +89,7 @@ export default function HomePage() {
         </Reveal>
         <Reveal delay={0.15}>
           <p className="mt-6 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-            MAPIL adalah rumah baju kontemporer buatan lokal yang memadukan
+            Git Store adalah rumah baju kontemporer buatan lokal yang memadukan
             busana sehari-hari yang halus dengan riak fesyen musiman — permanen
             dalam bentuk, sementara dalam tren.
           </p>
@@ -122,7 +122,7 @@ export default function HomePage() {
               </p>
               <h2 className="mt-3 font-serif text-4xl font-bold">Lebih Sedikit, Namun Lebih Baik.</h2>
               <p className="mt-4 max-w-md text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                MAPIL dirancang untuk kesederhanaan yang tenang. Setiap potongan
+                Git Store dirancang untuk kesederhanaan yang tenang. Setiap potongan
                 ditelaah, setiap kategori dikurasi, apa pun yang tidak bawa
                 nilai nyata ditiadakan.
               </p>
@@ -164,7 +164,7 @@ export default function HomePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500 dark:text-yellow-400">
             Gerai Kami
           </p>
-          <h2 className="mt-2 font-serif text-4xl font-bold">Kunjungi MAPIL</h2>
+          <h2 className="mt-2 font-serif text-4xl font-bold">Kunjungi Git Store</h2>
           <div className="mt-10 grid gap-5 sm:grid-cols-3">
             {GERAI.map((g, i) => (
               <Reveal key={g.nama} delay={i * 0.1}>

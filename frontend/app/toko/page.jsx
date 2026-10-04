@@ -3,9 +3,9 @@ import Reveal from "../../components/Reveal";
 import ReservasiSalon from "../../components/ReservasiSalon";
 
 export const metadata = {
-  title: "Toko Kami — MAPIL",
+  title: "Toko Kami — Git Store",
   description:
-    "Kunjungi gerai offline MAPIL di Jakarta, Bandung, dan Bali, atau reservasi private salon.",
+    "Kunjungi gerai offline Git Store di Jakarta, Bandung, dan Bali, atau reservasi private salon.",
 };
 
 const KANONIK = [
@@ -17,7 +17,7 @@ const KANONIK = [
 
 const GERAI = [
   {
-    ref: "Archive Ref. 01 — LUX-JKT",
+    ref: "Archive Ref. 01 — GS-JKT",
     kota: "Jakarta",
     nama: "Capital Atelier",
     alamat: "SCBD Pacific Century Tower",
@@ -26,7 +26,7 @@ const GERAI = [
     foto: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=900&auto=format&fit=crop",
   },
   {
-    ref: "Archive Ref. 02 — LUX-BDO",
+    ref: "Archive Ref. 02 — GS-BDO",
     kota: "Bandung",
     nama: "Highland Salon",
     alamat: "Jl. Braga Heritage No. 94",
@@ -35,7 +35,7 @@ const GERAI = [
     foto: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=900&auto=format&fit=crop",
   },
   {
-    ref: "Archive Ref. 03 — LUX-DPS",
+    ref: "Archive Ref. 03 — GS-DPS",
     kota: "Bali",
     nama: "Coastal Pavilion",
     alamat: "Jalan Sunu Bali Beach, Canggu",
@@ -48,7 +48,7 @@ const GERAI = [
 const LAYANAN_VIP = [
   {
     title: "Sesi Styling Private",
-    text: "Akses 90 menit ke studio fitting kami. Pendamping stylist MAPIL mendampingi pemilihan busana sesuai siluet dan kebutuhan.",
+    text: "Akses 90 menit ke studio fitting kami. Pendamping stylist Git Store mendampingi pemilihan busana sesuai siluet dan kebutuhan.",
     note: "Complimentary with Reservation",
   },
   {
@@ -77,7 +77,7 @@ export default function TokoPage() {
           <div className="grid gap-6 md:grid-cols-2 md:items-end">
             <div>
               <h1 className="font-serif text-4xl font-bold sm:text-5xl">
-                Kunjungi <span className="italic">MAPIL</span>
+                Kunjungi <span className="italic">Git Store</span>
               </h1>
               <p className="mt-3 text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500 dark:text-yellow-400">
                 Butik flagship kami adalah semacam sanctuary.

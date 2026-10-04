@@ -3,9 +3,9 @@ import FaqAkordeon from "../../components/FaqAkordeon";
 import Reveal from "../../components/Reveal";
 
 export const metadata = {
-  title: "Kontak — MAPIL",
+  title: "Kontak — Git Store",
   description:
-    "Hubungi tim MAPIL untuk pertanyaan produk, kemitraan, dan komisi bespoke.",
+    "Hubungi tim Git Store untuk pertanyaan produk, kemitraan, dan komisi bespoke.",
 };
 
 export default function KontakPage() {

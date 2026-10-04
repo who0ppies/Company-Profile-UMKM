@@ -1,8 +1,8 @@
 {
-  "name": "mapil-frontend",
+  "name": "git-store-frontend",
   "version": "1.0.0",
   "private": true,
-  "description": "Company Profile UMKM MAPIL — brand fashion lokal (Next.js)",
+  "description": "Company Profile UMKM Git Store — brand fashion lokal (Next.js)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
