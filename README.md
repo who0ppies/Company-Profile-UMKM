@@ -82,6 +82,7 @@ Dikelola PM. Status: `To Do` → `In Progress` → `Review` → `Done`.
 | 8 | README + dokumentasi | FE | Review | PR #8 |
 | 9 | Membuat design UI/UX | UI/UX | Done | - |
 | 10 | Membuat data API Product | BE | Done | PR #11 |
+| 11 | Pengujian fitur aplikasi & pencatatan bug | QA | To Do | - |
 
 
 ## API Katalog
