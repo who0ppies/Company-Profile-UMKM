@@ -24,7 +24,7 @@ Halaman: **Beranda** (`/`), **Koleksi** (`/koleksi`), **Tentang**
 
 | Nama | Username GitHub | Peran |
 |------|-----------------|-------|
-| _(diisi PM)_ | _(diisi)_ | Project Manager / Team Lead |
+| Fadiyah | who0ppies | Project Manager / Team Lead |
 | Willdan | `willdannaltairr` | Front-End Developer |
 | _(diisi)_ | _(diisi)_ | Back-End Developer |
 | _(diisi)_ | _(diisi)_ | UI/UX & Dokumentasi |
