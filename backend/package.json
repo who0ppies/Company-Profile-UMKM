@@ -1,8 +1,8 @@
 {
-  "name": "mapil-backend",
+  "name": "git-store-backend",
   "version": "1.0.0",
   "private": true,
-  "description": "Mini-API katalog produk UMKM MAPIL (Express + product.json)",
+  "description": "Mini-API katalog produk UMKM Git Store (Express + product.json)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
