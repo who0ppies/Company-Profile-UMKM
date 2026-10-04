@@ -89,8 +89,8 @@ export default function TentangPage() {
           <figure>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop"
-              alt="Atelier MAPIL"
+              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=900&auto=format&fit=crop"
+              alt="Rak koleksi atelier MAPIL"
               className="aspect-[4/5] w-full rounded-2xl object-cover"
             />
             <figcaption className="mt-3 text-xs text-zinc-500 dark:text-yellow-400">
