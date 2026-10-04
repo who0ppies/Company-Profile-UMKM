@@ -24,11 +24,11 @@ Halaman: **Beranda** (`/`), **Koleksi** (`/koleksi`), **Tentang**
 
 | Nama | Username GitHub | Peran |
 |------|-----------------|-------|
-| Fadiyah | who0ppies | Project Manager / Team Lead |
+| Fadiyah | `who0ppies` | Project Manager / Team Lead |
 | Willdan | `willdannaltairr` | Front-End Developer |
-| _(diisi)_ | _(diisi)_ | Back-End Developer |
-| _(diisi)_ | _(diisi)_ | UI/UX & Dokumentasi |
-| _(diisi)_ | _(diisi)_ | QA / Tester |
+| Habibi | `HabibiGanteng9` | Back-End Developer |
+| Reyza | `zaa657` | UI/UX & Dokumentasi |
+| Zakky| `zakky-cloud` | QA / Tester |
 
 > PM melengkapi nama di atas. Lihat riwayat commit tiap akun sebagai bukti
 > kontribusi individu.
@@ -80,6 +80,9 @@ Dikelola PM. Status: `To Do` → `In Progress` → `Review` → `Done`.
 | 6 | Animasi interaksi (Reveal/marquee) | FE | Review | PR #5 |
 | 7 | Bug: panel menu mobile tidak bisa di-scroll | FE | Review | #6 / PR #7 |
 | 8 | README + dokumentasi | FE | Review | PR #8 |
+| 9 | Membuat design UI/UX | UI/UX | Done | - |
+| 10 | Membuat data API Product | BE | Done | PR #11 |
+
 
 ## API Katalog
 
