@@ -81,7 +81,7 @@ Dikelola PM. Status: `To Do` → `In Progress` → `Review` → `Done`.
 | 7 | Bug: panel menu mobile tidak bisa di-scroll | FE | Review | #6 / PR #7 |
 | 8 | README + dokumentasi | FE | Review | PR #8 |
 | 9 | Membuat design UI/UX | UI/UX | Done | - |
-| 10 | Membuat data API Product | BE | Done | PR #11 |
+| 10 | Membuat data API Product | BE | Done | PR #12 |
 | 11 | Pengujian fitur aplikasi & pencatatan bug | QA | To Do | - |
 
 
