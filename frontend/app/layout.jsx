@@ -1,5 +1,6 @@
 import "./globals.css";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "MAPIL — Brand Fashion Lokal UMKM",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="id">
       <body className="flex min-h-screen flex-col bg-white text-zinc-900">
+        <Navbar />
         <div className="flex-1">{children}</div>
         <Footer />
       </body>
