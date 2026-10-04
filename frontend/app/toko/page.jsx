@@ -1,5 +1,6 @@
 import { MapPin, Clock, Phone } from "lucide-react";
 import Reveal from "../../components/Reveal";
+import ReservasiSalon from "../../components/ReservasiSalon";
 
 export const metadata = {
   title: "Toko Kami — MAPIL",
@@ -118,6 +119,12 @@ export default function TokoPage() {
             </article>
           </Reveal>
         ))}
+      </section>
+
+      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6">
+        <Reveal>
+          <ReservasiSalon />
+        </Reveal>
       </section>
 
       <section className="bg-zinc-50 py-20">
