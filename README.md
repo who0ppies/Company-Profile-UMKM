@@ -27,7 +27,7 @@ Halaman: **Beranda** (`/`), **Koleksi** (`/koleksi`), **Tentang**
 | Fadiyah Syafiqah | `who0ppies` | Project Manager / Team Lead |
 | Wildan Daffi Altair Darmawan | `willdannaltairr` | Front-End Developer |
 | Riza Habibi | `HabibiGanteng9` | Back-End Developer |
-| Reyza Aryo Attala| `zaa657` | UI/UX & Dokumentasi |
+| Reyza Aryo Attala| `zaa657` | UI/UX & Dokumentas |
 | Zakky Revandi| `zakky-cloud` | QA / Tester |
 
 > PM melengkapi nama di atas. Lihat riwayat commit tiap akun sebagai bukti
