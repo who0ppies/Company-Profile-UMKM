@@ -75,10 +75,10 @@ Dikelola PM. Status: `To Do` → `In Progress` → `Review` → `Done`.
 | 1 | Scaffold frontend + backend + product.json | FE | Done | - |
 | 2 | Navbar + halaman utama (hero) | FE | Done | PR #1 |
 | 3 | Katalog produk (filter/search/sortir) | FE | Done | PR #2 |
-| 4 | Halaman tentang | FE | Review | PR #3 |
-| 5 | Halaman toko + kontak + footer | FE | Review | PR #4 |
-| 6 | Animasi interaksi (Reveal/marquee) | FE | Review | PR #5 |
-| 7 | Bug: panel menu mobile tidak bisa di-scroll | FE | Review | #6 / PR #7 |
+| 4 | Halaman tentang | FE | Done | PR #3 |
+| 5 | Halaman toko + kontak + footer | FE | Done | PR #4 |
+| 6 | Animasi interaksi (Reveal/marquee) | FE | Done | PR #5 |
+| 7 | Bug: panel menu mobile tidak bisa di-scroll | FE | Done | #6 / PR #7 |
 | 8 | README + dokumentasi | FE | Review | PR #8 |
 | 9 | Membuat design UI/UX | UI/UX | Done | - |
 | 10 | Membuat data API Product | BE | Done | PR #12 |
