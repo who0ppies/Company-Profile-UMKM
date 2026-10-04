@@ -26,10 +26,10 @@ export default function ReservasiSalon() {
             setDone(true);
           }}
         >
-          <input required placeholder="Nama Lengkap" className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none placeholder:text-zinc-500" />
-          <input required placeholder="WhatsApp / Email" className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none placeholder:text-zinc-500" />
-          <input type="date" required className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none text-zinc-300" />
-          <select className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none">
+          <input required placeholder="Nama Lengkap" className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 placeholder:text-zinc-500" />
+          <input required placeholder="WhatsApp / Email" className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 placeholder:text-zinc-500" />
+          <input type="date" required className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 text-zinc-300" />
+          <select className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700">
             <option>Jakarta — Capital Atelier</option>
             <option>Bandung — Highland Salon</option>
             <option>Bali — Coastal Pavilion</option>
