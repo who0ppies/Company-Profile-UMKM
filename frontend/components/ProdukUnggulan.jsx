@@ -41,12 +41,12 @@ export default function ProdukUnggulan({ limit = 3 }) {
         [0, 1, 2].map((i) => (
           <div
             key={i}
-            className="h-72 animate-pulse rounded-2xl bg-zinc-100"
+            className="h-72 animate-pulse rounded-2xl bg-zinc-100 dark:bg-zinc-800"
           />
         ))}
       {products.map((p) => (
         <article key={p.id} className="group">
-          <div className="overflow-hidden rounded-2xl bg-zinc-100">
+          <div className="overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-800">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={p.gambar}
@@ -55,10 +55,10 @@ export default function ProdukUnggulan({ limit = 3 }) {
             />
           </div>
           <h3 className="mt-4 font-bold">{p.nama}</h3>
-          <p className="mt-1 line-clamp-2 text-sm text-zinc-600">
+          <p className="mt-1 line-clamp-2 text-sm text-zinc-600 dark:text-zinc-400">
             {p.deskripsi}
           </p>
-          <p className="mt-2 text-sm font-semibold text-zinc-900">
+          <p className="mt-2 text-sm font-semibold text-zinc-900 dark:text-zinc-50">
             Rp {p.harga.toLocaleString("id-ID")}
           </p>
         </article>

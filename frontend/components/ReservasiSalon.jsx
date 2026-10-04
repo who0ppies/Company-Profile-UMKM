@@ -6,8 +6,8 @@ export default function ReservasiSalon() {
   const [done, setDone] = useState(false);
 
   return (
-    <div className="rounded-2xl border border-zinc-200 bg-zinc-900 p-8 text-white sm:p-12">
-      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400">
+    <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-900 dark:bg-yellow-400 p-8 text-white dark:text-zinc-950 sm:p-12">
+      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-400 dark:text-zinc-500">
         Private Appointment Protocol
       </p>
       <h2 className="mt-3 font-serif text-3xl font-bold">
@@ -26,15 +26,15 @@ export default function ReservasiSalon() {
             setDone(true);
           }}
         >
-          <input required placeholder="Nama Lengkap" className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 placeholder:text-zinc-500" />
-          <input required placeholder="WhatsApp / Email" className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 placeholder:text-zinc-500" />
-          <input type="date" required className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 text-zinc-300" />
-          <select className="rounded-lg bg-zinc-800 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700">
+          <input required placeholder="Nama Lengkap" className="rounded-lg bg-zinc-800 dark:bg-zinc-950 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 placeholder:text-zinc-500 dark:text-yellow-400" />
+          <input required placeholder="WhatsApp / Email" className="rounded-lg bg-zinc-800 dark:bg-zinc-950 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 placeholder:text-zinc-500 dark:text-yellow-400" />
+          <input type="date" required className="rounded-lg bg-zinc-800 dark:bg-zinc-950 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 text-zinc-300" />
+          <select className="rounded-lg bg-zinc-800 dark:bg-zinc-950 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700">
             <option>Jakarta — Capital Atelier</option>
             <option>Bandung — Highland Salon</option>
             <option>Bali — Coastal Pavilion</option>
           </select>
-          <button type="submit" className="rounded-full bg-white px-6 py-3 text-sm font-bold text-zinc-900 transition-transform hover:scale-[1.02] sm:col-span-2">
+          <button type="submit" className="rounded-full bg-white dark:bg-zinc-950 px-6 py-3 text-sm font-bold text-zinc-900 dark:text-zinc-50 transition-transform hover:scale-[1.02] sm:col-span-2">
             Kirim Reservasi
           </button>
         </form>

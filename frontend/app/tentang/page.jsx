@@ -73,12 +73,12 @@ export default function TentangPage() {
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-5 text-zinc-600">
+            <p className="mt-5 text-zinc-600 dark:text-zinc-400">
               Menciptakan kemewahan yang sederhana dengan sedikit upaya.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mt-4 text-sm leading-relaxed text-zinc-700">
+            <p className="mt-4 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
               Berakar dari jalanan Indonesia dan adat tenun yang halus, MAPIL
               menciptakan arkade generasi lintas yang memantulkan siklus kain
               pada setiap potongan pakaiannya.
@@ -93,17 +93,17 @@ export default function TentangPage() {
               alt="Atelier MAPIL"
               className="aspect-[4/5] w-full rounded-2xl object-cover"
             />
-            <figcaption className="mt-3 text-xs text-zinc-500">
+            <figcaption className="mt-3 text-xs text-zinc-500 dark:text-yellow-400">
               Autumn / W 2026 — Dibentuk di Atelier
             </figcaption>
           </figure>
         </Reveal>
       </section>
 
-      <section className="bg-zinc-50 py-20">
+      <section className="bg-zinc-50 dark:bg-zinc-900 py-20">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500 dark:text-yellow-400">
               Pilar Manifestasi
             </p>
             <h2 className="mt-2 font-serif text-4xl font-bold">Anatomi Bentuk yang Penuh Kesadaran</h2>
@@ -111,10 +111,10 @@ export default function TentangPage() {
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {PILAR.map((p, i) => (
               <Reveal key={p.no} delay={(i % 3) * 0.1}>
-                <div className="h-full rounded-2xl border border-zinc-200 bg-white p-6">
-                  <p className="text-xs font-bold tracking-widest text-zinc-400">{p.no} / JENSEN</p>
+                <div className="h-full rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-6">
+                  <p className="text-xs font-bold tracking-widest text-zinc-400 dark:text-zinc-500">{p.no} / JENSEN</p>
                   <h3 className="mt-3 font-serif text-xl font-bold uppercase">{p.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-zinc-600">{p.text}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{p.text}</p>
                 </div>
               </Reveal>
             ))}
@@ -123,24 +123,24 @@ export default function TentangPage() {
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500 dark:text-yellow-400">
           Kronologi Rumah Mode
         </p>
         <h2 className="mt-2 font-serif text-4xl font-bold">Tonggak 2020 – 2026</h2>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-5">
           {MILESTONE.map((m) => (
-            <div key={m.tahun} className="rounded-2xl border border-zinc-200 bg-white p-5 text-center">
+            <div key={m.tahun} className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-5 text-center">
               <p className="font-serif text-2xl font-bold">{m.tahun}</p>
-              <p className="mt-1 text-xs uppercase tracking-widest text-zinc-500">{m.label}</p>
+              <p className="mt-1 text-xs uppercase tracking-widest text-zinc-500 dark:text-yellow-400">{m.label}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="bg-zinc-50 py-20">
+      <section className="bg-zinc-50 dark:bg-zinc-900 py-20">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500 dark:text-yellow-400">
               Para Pelopor
             </p>
             <h2 className="mt-2 font-serif text-4xl font-bold">Direktur Kreatif & Master Tailor</h2>
@@ -153,7 +153,7 @@ export default function TentangPage() {
                   <img loading="lazy" src={p.foto} alt={p.nama} className="aspect-[4/5] w-full rounded-2xl object-cover" />
                   <figcaption className="mt-4">
                     <p className="font-serif text-lg font-bold">{p.nama}</p>
-                    <p className="text-xs uppercase tracking-widest text-zinc-500">{p.peran}</p>
+                    <p className="text-xs uppercase tracking-widest text-zinc-500 dark:text-yellow-400">{p.peran}</p>
                   </figcaption>
                 </figure>
               </Reveal>
@@ -164,17 +164,17 @@ export default function TentangPage() {
 
       <section className="mx-auto w-full max-w-3xl px-4 py-24 text-center sm:px-6">
         <Reveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-yellow-400">
             Horizon Saat Ini → Autumn / Winter 2026
           </p>
           <h2 className="mt-4 font-serif text-4xl font-bold">Rasakan Arsitektur Berpakaian</h2>
-          <p className="mt-4 text-zinc-600">
+          <p className="mt-4 text-zinc-600 dark:text-zinc-400">
             Saksikan puncak disiplin arsitektural kami selama setahun — tiga
             siluet terbatas, sutra bantuan, dan sentihan denim liar.
           </p>
           <Link
             href="/koleksi"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-zinc-900 px-8 py-4 text-sm font-semibold text-white transition-transform hover:scale-105"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-zinc-900 dark:bg-yellow-400 px-8 py-4 text-sm font-semibold text-white dark:text-zinc-950 transition-transform hover:scale-105"
           >
             Jelajahi Koleksi Autumn / Winter 2026 <ArrowRight size={16} />
           </Link>
