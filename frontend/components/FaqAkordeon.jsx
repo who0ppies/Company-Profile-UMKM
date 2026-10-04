@@ -32,7 +32,7 @@ export default function FaqAkordeon() {
           <button
             type="button"
             onClick={() => setOpen(open === i ? -1 : i)}
-            className="flex w-full items-center justify-between text-left text-sm font-bold uppercase tracking-wide"
+            className="flex w-full items-center justify-between text-left text-sm font-bold uppercase tracking-wide transition-colors hover:text-zinc-500"
             aria-expanded={open === i}
           >
             {item.q}
