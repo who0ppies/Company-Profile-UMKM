@@ -9,8 +9,8 @@ const FAQ = [
     a: "Private fitting dapat dipesan lewat formulir kami di atas. Sebaiknya reservasi dibuat setidaknya 72 jam sebelumnya agar slot konsultasi tersedia.",
   },
   {
-    q: "Apakah MAPIL menerima komisi siluet custom?",
-    a: "Ya — MAPIL menerima jumlah terbatas komisi bespoke setiap kuartal. Direktur kreatif kami menangani fitting muslin awal dan penentuan kain individu dari workshop mitra lokal.",
+    q: "Apakah Git Store menerima komisi siluet custom?",
+    a: "Ya — Git Store menerima jumlah terbatas komisi bespoke setiap kuartal. Direktur kreatif kami menangani fitting muslin awal dan penentuan kain individu dari workshop mitra lokal.",
   },
   {
     q: "Berapa lama penjahitan bespoke dan made-to-measure?",

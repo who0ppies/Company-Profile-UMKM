@@ -1,6 +1,6 @@
-# Company Profile UMKM — MAPIL
+# Company Profile UMKM — Git Store
 
-Website company profile UMKM brand fashion lokal **MAPIL**, dibangun oleh **KodeKita Studio** (RPL Kelas XI).
+Website company profile UMKM brand fashion lokal **Git Store**, dibangun oleh **KodeKita Studio** (RPL Kelas XI).
 
 ## Struktur Repository
 

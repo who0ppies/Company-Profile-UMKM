@@ -39,7 +39,7 @@ export default function ContactForm() {
         <CheckCircle2 size={44} className="text-zinc-900 dark:text-zinc-50" />
         <h2 className="mt-4 text-lg font-bold">Pesan Terkirim!</h2>
         <p className="mt-2 max-w-sm text-sm text-zinc-600 dark:text-zinc-400">
-          Terima kasih sudah menghubungi MAPIL. Tim kami akan membalas
+          Terima kasih sudah menghubungi Git Store. Tim kami akan membalas
           maksimal 1×24 jam kerja.
         </p>
         <button

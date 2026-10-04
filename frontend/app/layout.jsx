@@ -3,9 +3,9 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 export const metadata = {
-  title: "MAPIL — Brand Fashion Lokal UMKM",
+  title: "Git Store — Brand Fashion Lokal UMKM",
   description:
-    "Company profile UMKM MAPIL: brand fashion lokal dengan katalog produk, cerita brand, toko, dan kontak.",
+    "Company profile UMKM Git Store: brand fashion lokal dengan katalog produk, cerita brand, toko, dan kontak.",
 };
 
 export default function RootLayout({ children }) {
