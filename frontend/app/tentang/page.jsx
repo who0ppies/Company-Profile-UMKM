@@ -150,7 +150,7 @@ export default function TentangPage() {
               <Reveal key={p.nama}>
                 <figure>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={p.foto} alt={p.nama} className="aspect-[4/5] w-full rounded-2xl object-cover" />
+                  <img loading="lazy" src={p.foto} alt={p.nama} className="aspect-[4/5] w-full rounded-2xl object-cover" />
                   <figcaption className="mt-4">
                     <p className="font-serif text-lg font-bold">{p.nama}</p>
                     <p className="text-xs uppercase tracking-widest text-zinc-500">{p.peran}</p>
