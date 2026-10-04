@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingBag, User, Menu, X } from "lucide-react";
+import { ShoppingBag, User, Menu, X, Sun, Moon } from "lucide-react";
 
 const LINKS = [
   { label: "Beranda", href: "/" },
@@ -16,6 +16,23 @@ const LINKS = [
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem("tema");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const enable = stored ? stored === "gelap" : prefersDark;
+    setDark(enable);
+    document.documentElement.classList.toggle("dark", enable);
+  }, []);
+
+  function toggleTema() {
+    const el = document.documentElement;
+    const enable = !el.classList.contains("dark");
+    el.classList.toggle("dark", enable);
+    setDark(enable);
+    window.localStorage.setItem("tema", enable ? "gelap" : "terang");
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/90 backdrop-blur">
@@ -45,6 +62,14 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={toggleTema}
+            aria-label="Ganti mode warna"
+            className="text-zinc-700 transition-colors hover:text-zinc-900 dark:text-yellow-400 dark:hover:text-yellow-300"
+          >
+            {dark ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
           <Link href="/koleksi" aria-label="Keranjang" className="text-zinc-700 transition-colors hover:text-zinc-900">
             <ShoppingBag size={20} />
           </Link>

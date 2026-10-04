@@ -35,17 +35,17 @@ export default function ContactForm() {
 
   if (sent) {
     return (
-      <div className="flex flex-col items-center rounded-2xl border border-zinc-200 bg-zinc-50 p-10 text-center">
-        <CheckCircle2 size={44} className="text-zinc-900" />
+      <div className="flex flex-col items-center rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 p-10 text-center">
+        <CheckCircle2 size={44} className="text-zinc-900 dark:text-zinc-50" />
         <h2 className="mt-4 text-lg font-bold">Pesan Terkirim!</h2>
-        <p className="mt-2 max-w-sm text-sm text-zinc-600">
+        <p className="mt-2 max-w-sm text-sm text-zinc-600 dark:text-zinc-400">
           Terima kasih sudah menghubungi MAPIL. Tim kami akan membalas
           maksimal 1×24 jam kerja.
         </p>
         <button
           type="button"
           onClick={() => setSent(false)}
-          className="mt-6 rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-semibold transition-colors hover:border-zinc-900"
+          className="mt-6 rounded-full border border-zinc-300 dark:border-zinc-700 px-5 py-2.5 text-sm font-semibold transition-colors hover:border-zinc-900"
         >
           Kirim Pesan Lain
         </button>
@@ -57,7 +57,7 @@ export default function ContactForm() {
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="rounded-2xl border border-zinc-200 bg-white p-6 sm:p-8"
+      className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-6 sm:p-8"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block">
@@ -68,7 +68,7 @@ export default function ContactForm() {
             value={form.nama}
             onChange={handleChange}
             placeholder="Nama kamu"
-            className="mt-1.5 w-full rounded-xl border border-zinc-200 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 focus:border-zinc-900"
+            className="mt-1.5 w-full rounded-xl border border-zinc-200 dark:border-zinc-800 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 dark:text-zinc-500 focus:border-zinc-900"
           />
         </label>
         <label className="block">
@@ -79,7 +79,7 @@ export default function ContactForm() {
             value={form.email}
             onChange={handleChange}
             placeholder="nama@email.com"
-            className="mt-1.5 w-full rounded-xl border border-zinc-200 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 focus:border-zinc-900"
+            className="mt-1.5 w-full rounded-xl border border-zinc-200 dark:border-zinc-800 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 dark:text-zinc-500 focus:border-zinc-900"
           />
         </label>
       </div>
@@ -91,7 +91,7 @@ export default function ContactForm() {
           onChange={handleChange}
           rows={5}
           placeholder="Tulis pertanyaan, kritik, atau saran..."
-          className="mt-1.5 w-full resize-none rounded-xl border border-zinc-200 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 focus:border-zinc-900"
+          className="mt-1.5 w-full resize-none rounded-xl border border-zinc-200 dark:border-zinc-800 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 dark:text-zinc-500 focus:border-zinc-900"
         />
       </label>
 
@@ -103,7 +103,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-zinc-900 px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.02] sm:w-auto"
+        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-zinc-900 dark:bg-yellow-400 px-6 py-3.5 text-sm font-semibold text-white dark:text-zinc-950 transition-transform hover:scale-[1.02] sm:w-auto"
       >
         <Send size={16} />
         Kirim Pesan

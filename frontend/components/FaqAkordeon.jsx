@@ -28,18 +28,18 @@ export default function FaqAkordeon() {
   return (
     <div className="space-y-4">
       {FAQ.map((item, i) => (
-        <div key={item.q} className="rounded-2xl border border-zinc-200 bg-white p-6">
+        <div key={item.q} className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-6">
           <button
             type="button"
             onClick={() => setOpen(open === i ? -1 : i)}
-            className="flex w-full items-center justify-between text-left text-sm font-bold uppercase tracking-wide transition-colors hover:text-zinc-500"
+            className="flex w-full items-center justify-between text-left text-sm font-bold uppercase tracking-wide transition-colors hover:text-zinc-500 dark:text-yellow-400"
             aria-expanded={open === i}
           >
             {item.q}
             {open === i ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
           </button>
           {open === i && (
-            <p className="mt-4 text-sm leading-relaxed text-zinc-600">{item.a}</p>
+            <p className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">{item.a}</p>
           )}
         </div>
       ))}

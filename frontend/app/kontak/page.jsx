@@ -18,7 +18,7 @@ export default function KontakPage() {
           </h1>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="max-w-sm text-sm leading-relaxed text-zinc-600">
+          <p className="max-w-sm text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
             Untuk komisi bespoke, konsultasi salon, pers dossier, atau kritik
             saran — tim concierge kami siap membantu.
           </p>
@@ -27,18 +27,18 @@ export default function KontakPage() {
 
       <section className="mx-auto w-full max-w-4xl px-4 pb-20 sm:px-6">
         <Reveal>
-          <h2 className="text-center font-serif text-3xl font-bold text-zinc-900">Hubungi Kami</h2>
+          <h2 className="text-center font-serif text-3xl font-bold text-zinc-900 dark:text-zinc-50">Hubungi Kami</h2>
         </Reveal>
         <div className="mt-8">
           <ContactForm />
         </div>
       </section>
 
-      <section className="bg-zinc-50 py-20">
+      <section className="bg-zinc-50 dark:bg-zinc-900 py-20">
         <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
           <Reveal>
             <h2 className="text-center font-serif text-4xl font-bold">FAQ</h2>
-            <p className="mt-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+            <p className="mt-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500 dark:text-yellow-400">
               Bagaimana Saya Bisa Melihat Koleksi Secara Langsung?
             </p>
           </Reveal>
