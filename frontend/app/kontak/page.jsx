@@ -1,67 +1,52 @@
-import { Mail, Phone, MapPin } from "lucide-react";
 import ContactForm from "../../components/ContactForm";
+import FaqAkordeon from "../../components/FaqAkordeon";
+import Reveal from "../../components/Reveal";
 
 export const metadata = {
   title: "Kontak — MAPIL",
   description:
-    "Hubungi tim MAPIL untuk pertanyaan produk, kemitraan, dan kritik saran.",
+    "Hubungi tim MAPIL untuk pertanyaan produk, kemitraan, dan komisi bespoke.",
 };
-
-const CONTACTS = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "halo@mapil.id",
-  },
-  {
-    icon: Phone,
-    label: "WhatsApp",
-    value: "+62 812-3456-7890",
-  },
-  {
-    icon: MapPin,
-    label: "Alamat",
-    value: "Jl. Pengrajin No. 12, Bandung",
-  },
-];
 
 export default function KontakPage() {
   return (
-    <main className="mx-auto w-full max-w-6xl px-4 pb-20 pt-12 sm:px-6">
-      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
-        Hubungi Kami
-      </p>
-      <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-        Ada yang Bisa Kami Bantu?
-      </h1>
-      <p className="mt-3 max-w-2xl text-zinc-600">
-        Kirim pesan lewat formulir atau hubungi salah satu kanal resmi kami
-        di bawah ini.
-      </p>
+    <main>
+      <section className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 pb-10 pt-16 sm:px-6 md:flex-row md:items-end md:justify-between">
+        <Reveal>
+          <h1 className="font-serif text-4xl font-bold leading-tight sm:text-5xl">
+            Mari Menciptakan <span className="italic">Sesuatu yang Abadi</span>
+          </h1>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <p className="max-w-sm text-sm leading-relaxed text-zinc-600">
+            Untuk komisi bespoke, konsultasi salon, pers dossier, atau kritik
+            saran — tim concierge kami siap membantu.
+          </p>
+        </Reveal>
+      </section>
 
-      <div className="mt-10 grid gap-8 lg:grid-cols-5">
-        <div className="space-y-4 lg:col-span-2">
-          {CONTACTS.map((item) => (
-            <div
-              key={item.label}
-              className="flex items-center gap-4 rounded-2xl border border-zinc-200 bg-white p-5"
-            >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-zinc-900 text-white">
-                <item.icon size={20} />
-              </span>
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500">
-                  {item.label}
-                </p>
-                <p className="mt-0.5 font-semibold">{item.value}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="lg:col-span-3">
+      <section className="mx-auto w-full max-w-4xl px-4 pb-20 sm:px-6">
+        <Reveal>
+          <h2 className="text-center font-serif text-3xl font-bold text-zinc-900">Hubungi Kami</h2>
+        </Reveal>
+        <div className="mt-8">
           <ContactForm />
         </div>
-      </div>
+      </section>
+
+      <section className="bg-zinc-50 py-20">
+        <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
+          <Reveal>
+            <h2 className="text-center font-serif text-4xl font-bold">FAQ</h2>
+            <p className="mt-3 text-center text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500">
+              Bagaimana Saya Bisa Melihat Koleksi Secara Langsung?
+            </p>
+          </Reveal>
+          <div className="mt-10">
+            <FaqAkordeon />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
