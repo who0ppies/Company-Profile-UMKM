@@ -73,8 +73,8 @@ Dikelola PM. Status: `To Do` → `In Progress` → `Review` → `Done`.
 | No | Tugas | PIC | Status | Issue |
 |----|-------|-----|--------|-------|
 | 1 | Scaffold frontend + backend + product.json | FE | Done | - |
-| 2 | Navbar + halaman utama (hero) | FE | Review | PR #1 |
-| 3 | Katalog produk (filter/search/sortir) | FE | Review | PR #2 |
+| 2 | Navbar + halaman utama (hero) | FE | Done | PR #1 |
+| 3 | Katalog produk (filter/search/sortir) | FE | Done | PR #2 |
 | 4 | Halaman tentang | FE | Review | PR #3 |
 | 5 | Halaman toko + kontak + footer | FE | Review | PR #4 |
 | 6 | Animasi interaksi (Reveal/marquee) | FE | Review | PR #5 |
