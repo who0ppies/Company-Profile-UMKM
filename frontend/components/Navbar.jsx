@@ -71,7 +71,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className={`block rounded-md px-3 py-2 text-sm font-semibold ${
-                    pathname === link.href ? "bg-zinc-900 text-white" : "text-zinc-600"
+                    pathname === link.href ? "bg-zinc-900 text-white" : "text-zinc-600 hover:bg-zinc-100"
                   }`}
                 >
                   {link.label}
