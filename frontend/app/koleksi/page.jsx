@@ -115,9 +115,19 @@ export default function KoleksiPage() {
       </div>
 
       {!loading && !error && products.length === 0 && (
-        <p className="mt-10 text-center text-sm text-zinc-500">
-          Tidak ada produk yang cocok. Coba kata kunci lain.
-        </p>
+        <div className="mt-10 flex flex-col items-center gap-3 text-sm text-zinc-500">
+          <p>Tidak ada produk yang cocok. Coba kata kunci lain.</p>
+          <button
+            type="button"
+            onClick={() => {
+              setKategori("Semua");
+              setQ("");
+            }}
+            className="rounded-full border border-zinc-300 px-5 py-2 font-semibold text-zinc-700 transition-colors hover:border-zinc-900 hover:text-zinc-900"
+          >
+            Reset Filter
+          </button>
+        </div>
       )}
     </main>
   );
