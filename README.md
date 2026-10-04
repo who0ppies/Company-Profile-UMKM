@@ -1,6 +1,6 @@
 # Company Profile UMKM — Git Store
 
-Website company profile UMKM brand fashion lokal **Git Store**, dibangun oleh **KodeKita Studio** (RPL Kelas XI).
+Website company profile UMKM brand fashion lokal **Git Store**, dibangun oleh Kelompok 7 XI RPL 2.
 
 ## Struktur Repository
 
@@ -45,8 +45,6 @@ Buka http://localhost:3000. Variabel `NEXT_PUBLIC_API_URL` (opsional) mengatur a
 | (BE) | Back-End Developer |
 | (UI/UX) | UI/UX & Dokumentasi |
 | (QA) | QA/Tester |
-
-> Lengkapi dengan screenshot Daftar Tugas Tim, `git log --oneline --graph --all`, dan kendala kolaborasi pada Laporan Kolaborasi Tim.
 
 ## Halaman
 
