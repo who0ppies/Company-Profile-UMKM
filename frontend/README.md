@@ -1,6 +1,6 @@
-# MAPIL — Frontend
+# Git Store — Frontend
 
-Antarmuka website company profile UMKM MAPIL, dibangun dengan Next.js (App Router, JSX) dan Tailwind CSS.
+Antarmuka website company profile UMKM Git Store, dibangun dengan Next.js (App Router, JSX) dan Tailwind CSS.
 
 ## Menjalankan
 

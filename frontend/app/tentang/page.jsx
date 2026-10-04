@@ -3,16 +3,16 @@ import { ArrowRight } from "lucide-react";
 import Reveal from "../../components/Reveal";
 
 export const metadata = {
-  title: "Tentang — MAPIL",
+  title: "Tentang — Git Store",
   description:
-    "Kisah brand MAPIL: dari studio kecil Bandung 2020 hingga rumah mode lokal 2026.",
+    "Kisah brand Git Store: dari studio kecil Bandung 2020 hingga rumah mode lokal 2026.",
 };
 
 const PILAR = [
   {
     no: "01",
     title: "Asal Mula",
-    text: "MAPIL dimulai dari sebuah meja rancangan kecil di Bandung pada 2020 — tiga pengrajin, satu mesin jahit, dan keyakinan bahwa busana sehari-hari bisa bernilai tinggi.",
+    text: "Git Store dimulai dari sebuah meja rancangan kecil di Bandung pada 2020 — tiga pengrajin, satu mesin jahit, dan keyakinan bahwa busana sehari-hari bisa bernilai tinggi.",
   },
   {
     no: "02",
@@ -22,7 +22,7 @@ const PILAR = [
   {
     no: "03",
     title: "Signature",
-    text: "Potongan asimetris, lipatang turban, dan jahitan tepi tangan — elemen kecil yang menjadi bahasa visual MAPIL.",
+    text: "Potongan asimetris, lipatang turban, dan jahitan tepi tangan — elemen kecil yang menjadi bahasa visual Git Store.",
   },
   {
     no: "04",
@@ -69,7 +69,7 @@ export default function TentangPage() {
         <div>
           <Reveal>
             <h1 className="font-serif text-4xl font-bold leading-tight sm:text-5xl">
-              Kisah <span className="italic">di Balik</span> MAPIL.
+              Kisah <span className="italic">di Balik</span> Git Store.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
@@ -79,7 +79,7 @@ export default function TentangPage() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-4 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-              Berakar dari jalanan Indonesia dan adat tenun yang halus, MAPIL
+              Berakar dari jalanan Indonesia dan adat tenun yang halus, Git Store
               menciptakan arkade generasi lintas yang memantulkan siklus kain
               pada setiap potongan pakaiannya.
             </p>
@@ -90,7 +90,7 @@ export default function TentangPage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop"
-              alt="Atelier MAPIL"
+              alt="Atelier Git Store"
               className="aspect-[4/5] w-full rounded-2xl object-cover"
             />
             <figcaption className="mt-3 text-xs text-zinc-500 dark:text-yellow-400">
