@@ -10,15 +10,21 @@ export default function KoleksiPage() {
   const [products, setProducts] = useState([]);
   const [kategori, setKategori] = useState("Semua");
   const [q, setQ] = useState("");
+  const [debouncedQ, setDebouncedQ] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const t = setTimeout(() => setDebouncedQ(q.trim()), 400);
+    return () => clearTimeout(t);
+  }, [q]);
 
   useEffect(() => {
     let active = true;
     setLoading(true);
     const params = new URLSearchParams();
     if (kategori !== "Semua") params.set("kategori", kategori);
-    if (q.trim()) params.set("q", q.trim());
+    if (debouncedQ) params.set("q", debouncedQ);
     fetch(`${API_URL}/api/products?${params.toString()}`)
       .then((res) => {
         if (!res.ok) throw new Error("Gagal memuat katalog");
@@ -39,7 +45,7 @@ export default function KoleksiPage() {
     return () => {
       active = false;
     };
-  }, [kategori, q]);
+  }, [kategori, debouncedQ]);
 
   return (
     <main className="mx-auto w-full max-w-6xl px-4 pb-24 pt-12 sm:px-6">
@@ -78,7 +84,7 @@ export default function KoleksiPage() {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Cari produk…"
-          className="w-full rounded-full border border-zinc-300 dark:border-zinc-700 px-4 py-2 text-sm outline-none focus:border-zinc-900 sm:w-64"
+          className="w-full rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm text-zinc-900 outline-none focus:border-zinc-900 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-50 dark:placeholder:text-zinc-500 dark:focus:border-yellow-400 sm:w-64"
         />
       </div>
 
@@ -106,7 +112,7 @@ export default function KoleksiPage() {
                   </div>
                   <div className="mt-3 flex items-baseline justify-between gap-4">
                     <h3 className="font-serif text-lg font-bold uppercase tracking-wide">{p.nama}</h3>
-                    <p className="text-sm font-semibold">Rp {p.harga.toLocaleString("id-ID")}</p>
+                    <p className="text-sm font-semibold">Rp {(Number(p.harga) || 0).toLocaleString("id-ID")}</p>
                   </div>
                   <p className="mt-1 line-clamp-2 text-sm text-zinc-600 dark:text-zinc-400">{p.deskripsi}</p>
                 </article>

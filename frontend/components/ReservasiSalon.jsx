@@ -26,10 +26,10 @@ export default function ReservasiSalon() {
             setDone(true);
           }}
         >
-          <input required placeholder="Nama Lengkap" className="rounded-lg bg-zinc-800 dark:bg-zinc-950 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 placeholder:text-zinc-500 dark:text-yellow-400" />
-          <input required placeholder="WhatsApp / Email" className="rounded-lg bg-zinc-800 dark:bg-zinc-950 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 placeholder:text-zinc-500 dark:text-yellow-400" />
-          <input type="date" required className="rounded-lg bg-zinc-800 dark:bg-zinc-950 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700 text-zinc-300" />
-          <select className="rounded-lg bg-zinc-800 dark:bg-zinc-950 px-4 py-3 text-sm outline-none transition-colors focus:bg-zinc-700">
+          <input required placeholder="Nama Lengkap" className="rounded-lg bg-zinc-800 px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-zinc-500 focus:bg-zinc-700 dark:bg-zinc-950 dark:text-zinc-50 dark:placeholder:text-zinc-500 dark:focus:bg-zinc-900" />
+          <input required placeholder="WhatsApp / Email" className="rounded-lg bg-zinc-800 px-4 py-3 text-sm text-white outline-none transition-colors placeholder:text-zinc-500 focus:bg-zinc-700 dark:bg-zinc-950 dark:text-zinc-50 dark:placeholder:text-zinc-500 dark:focus:bg-zinc-900" />
+          <input type="date" required className="rounded-lg bg-zinc-800 px-4 py-3 text-sm text-zinc-200 outline-none transition-colors focus:bg-zinc-700 dark:bg-zinc-950 dark:text-zinc-200 dark:focus:bg-zinc-900" />
+          <select className="rounded-lg bg-zinc-800 px-4 py-3 text-sm text-zinc-200 outline-none transition-colors focus:bg-zinc-700 dark:bg-zinc-950 dark:text-zinc-200 dark:focus:bg-zinc-900">
             <option>Jakarta — Capital Atelier</option>
             <option>Bandung — Highland Salon</option>
             <option>Bali — Coastal Pavilion</option>

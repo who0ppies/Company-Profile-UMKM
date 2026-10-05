@@ -41,7 +41,7 @@ const GERAI = [
     alamat: "Jalan Sunu Bali Beach, Canggu",
     jam: "Daily · 10:00 – 22:00 WITA",
     telepon: "+62 21 555 8890",
-    foto: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=900&auto=format&fit=crop",
+    foto: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=900&auto=format&fit=crop",
   },
 ];
 

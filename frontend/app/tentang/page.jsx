@@ -48,12 +48,12 @@ const PELOPOR = [
   {
     nama: "Evelyn Vance",
     peran: "Direktur Kreatif — Paris Atelier",
-    foto: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=600&auto=format&fit=crop",
+    foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
   },
   {
     nama: "Dian Arisanti",
     peran: "Atelier Head — Jakarta",
-    foto: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop",
+    foto: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=600&auto=format&fit=crop",
   },
   {
     nama: "Matteo Rosetti",
@@ -89,8 +89,8 @@ export default function TentangPage() {
           <figure>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=900&auto=format&fit=crop"
-              alt="Atelier Git Store"
+              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=900&auto=format&fit=crop"
+              alt="Rak koleksi atelier Git Store"
               className="aspect-[4/5] w-full rounded-2xl object-cover"
             />
             <figcaption className="mt-3 text-xs text-zinc-500 dark:text-yellow-400">
