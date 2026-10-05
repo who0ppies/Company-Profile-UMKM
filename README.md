@@ -105,4 +105,4 @@ Sumber kanonis: `backend/product.json` (12 produk fashion UMKM).
 - Commit konvensional (`feat:`, `fix:`, `style:`, `docs:`, `refactor:`),
   minimal 3 commit per fitur. Dilarang: `update`, `asdf`, `revisi lagi`.
 - Push branch lalu buat PR ke `develop`; minimal 1 review sebelum merge.
-- Dilarang push langsung ke `main`.
+- Dilarang push langsung ke `main`. 
