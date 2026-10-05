@@ -58,7 +58,8 @@ npm run dev
 Buka `http://localhost:3000`. Build produksi: `npm run build`.
 
 ## Screenshot
-
+ 
+Link Figma : https://www.figma.com/design/sVjDP7TJNTVLkgkyl2iYVZ/Mapil?node-id=0-1&t=LUcsgxebvRkRsrnj-1
 > Tim UI/UX menaruh tangkapan layar di `docs/screenshots/` lalu menautkannya
 > di sini sebelum presentasi.
 
