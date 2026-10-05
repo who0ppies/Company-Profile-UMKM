@@ -87,7 +87,7 @@ Dikelola PM. Status: `To Do` → `In Progress` → `Review` → `Done`.
 | 12 | Halaman Koleksi | FE | Done | PR #24 |
 
 
-## API Katalog
+## API Katalog.
 
 Sumber kanonis: `backend/product.json` (12 produk fashion UMKM).
 
