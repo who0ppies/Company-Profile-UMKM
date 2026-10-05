@@ -12,7 +12,11 @@ app.use(express.json());
 function loadCatalog() {
   const filePath = path.join(__dirname, "product.json");
   const raw = fs.readFileSync(filePath, "utf-8");
-  return JSON.parse(raw);
+  const catalog = JSON.parse(raw);
+  if (!Array.isArray(catalog.products)) {
+    throw new Error("product.json tidak valid: products harus array.");
+  }
+  return catalog;
 }
 
 app.get("/health", (req, res) => {
@@ -20,8 +24,13 @@ app.get("/health", (req, res) => {
 });
 
 app.get("/api/products", (req, res) => {
+  let catalog;
+  try {
+    catalog = loadCatalog();
+  } catch (err) {
+    return res.status(500).json({ message: "Gagal memuat katalog produk." });
+  }
   const { kategori, q, limit } = req.query;
-  const catalog = loadCatalog();
   let products = catalog.products;
 
   if (kategori && kategori !== "Semua") {
@@ -32,14 +41,17 @@ app.get("/api/products", (req, res) => {
     const keyword = String(q).toLowerCase();
     products = products.filter(
       (p) =>
-        p.nama.toLowerCase().includes(keyword) ||
-        p.deskripsi.toLowerCase().includes(keyword) ||
-        p.kategori.toLowerCase().includes(keyword)
+        String(p.nama || "").toLowerCase().includes(keyword) ||
+        String(p.deskripsi || "").toLowerCase().includes(keyword) ||
+        String(p.kategori || "").toLowerCase().includes(keyword)
     );
   }
 
   if (limit) {
-    products = products.slice(0, Number(limit));
+    const n = Number(limit);
+    if (Number.isFinite(n) && n >= 0) {
+      products = products.slice(0, Math.floor(n));
+    }
   }
 
   res.json({
@@ -51,7 +63,12 @@ app.get("/api/products", (req, res) => {
 });
 
 app.get("/api/products/:id", (req, res) => {
-  const catalog = loadCatalog();
+  let catalog;
+  try {
+    catalog = loadCatalog();
+  } catch (err) {
+    return res.status(500).json({ message: "Gagal memuat katalog produk." });
+  }
   const product = catalog.products.find((p) => p.id === req.params.id);
 
   if (!product) {
@@ -59,6 +76,10 @@ app.get("/api/products/:id", (req, res) => {
   }
 
   res.json({ data: product });
+});
+
+app.use((req, res) => {
+  res.status(404).json({ message: "Endpoint tidak ditemukan." });
 });
 
 app.listen(PORT, () => {
