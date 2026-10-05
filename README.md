@@ -1,7 +1,7 @@
 # MAPIL — Company Profile UMKM (Proyek D)
 
 Landing page + katalog produk brand fashion lokal **MAPIL** oleh startup
-**KodeKita Studio**. Dibangun sebagai simulasi tim pengembang perangkat
+**KodeKita Studio**. Dibangun sebagai simulasi tim pengembang perangkat.
 lunak (RPL Kelas XI) dengan Git workflow ala industri: `main` ← `develop`
 ← `feature/*` / `fix/*`, commit konvensional, dan Pull Request + review.
 
