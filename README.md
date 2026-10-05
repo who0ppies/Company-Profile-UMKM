@@ -52,6 +52,6 @@ Buka http://localhost:3000. Variabel `NEXT_PUBLIC_API_URL` (opsional) mengatur a
 
 - `/` — Beranda (hero, manifesto, kapsul produk, prinsip brand, gerai, CTA).
 - `/tentang` — Cerita brand, pilar, tonggak 2020–2026, pelopor.
-- `/koleksi` — Katalog produk dari API backend (filter kategori + pencarian)
+- `/koleksi` — Katalog produk dari API backend (filter kategori + pencarian).
 - `/toko` — Gerai, layanan VIP, formulir reservasi, ekspansi 2027
 - `/kontak` — Formulir kontak + FAQ
