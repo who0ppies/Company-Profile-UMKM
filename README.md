@@ -39,7 +39,7 @@ Butuh Node.js 18+ dan npm.
 
 **Backend (port 5000):**
 
-```bash
+```bash.
 cd backend
 npm install
 npm start
