@@ -68,7 +68,7 @@ export default function ContactForm() {
             value={form.nama}
             onChange={handleChange}
             placeholder="Nama kamu"
-            className="mt-1.5 w-full rounded-xl border border-zinc-200 dark:border-zinc-800 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 dark:text-zinc-500 focus:border-zinc-900"
+            className="mt-1.5 w-full rounded-xl border border-zinc-200 px-4 py-3 text-sm text-zinc-900 outline-none transition-colors placeholder:text-zinc-400 focus:border-zinc-900 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-50 dark:placeholder:text-zinc-500 dark:focus:border-yellow-400"
           />
         </label>
         <label className="block">
@@ -79,7 +79,7 @@ export default function ContactForm() {
             value={form.email}
             onChange={handleChange}
             placeholder="nama@email.com"
-            className="mt-1.5 w-full rounded-xl border border-zinc-200 dark:border-zinc-800 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 dark:text-zinc-500 focus:border-zinc-900"
+            className="mt-1.5 w-full rounded-xl border border-zinc-200 px-4 py-3 text-sm text-zinc-900 outline-none transition-colors placeholder:text-zinc-400 focus:border-zinc-900 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-50 dark:placeholder:text-zinc-500 dark:focus:border-yellow-400"
           />
         </label>
       </div>
@@ -91,7 +91,7 @@ export default function ContactForm() {
           onChange={handleChange}
           rows={5}
           placeholder="Tulis pertanyaan, kritik, atau saran..."
-          className="mt-1.5 w-full resize-none rounded-xl border border-zinc-200 dark:border-zinc-800 px-4 py-3 text-sm outline-none transition-colors placeholder:text-zinc-400 dark:text-zinc-500 focus:border-zinc-900"
+          className="mt-1.5 w-full resize-none rounded-xl border border-zinc-200 px-4 py-3 text-sm text-zinc-900 outline-none transition-colors placeholder:text-zinc-400 focus:border-zinc-900 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-50 dark:placeholder:text-zinc-500 dark:focus:border-yellow-400"
         />
       </label>
 
