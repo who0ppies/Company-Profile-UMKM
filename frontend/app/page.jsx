@@ -40,8 +40,8 @@ export default function HomePage() {
       <section className="relative flex min-h-[80vh] items-center bg-zinc-100 dark:bg-zinc-800">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600&auto=format&fit=crop"
-          alt="Koleksi fashion Git Store"
+          src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1600&auto=format&fit=crop"
+          alt="Rak koleksi fashion Git Store"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-white/60 dark:bg-black/60" />
