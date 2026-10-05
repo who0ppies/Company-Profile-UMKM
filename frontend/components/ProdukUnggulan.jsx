@@ -59,7 +59,7 @@ export default function ProdukUnggulan({ limit = 3 }) {
             {p.deskripsi}
           </p>
           <p className="mt-2 text-sm font-semibold text-zinc-900 dark:text-zinc-50">
-            Rp {p.harga.toLocaleString("id-ID")}
+            Rp {(Number(p.harga) || 0).toLocaleString("id-ID")}
           </p>
         </article>
       ))}
