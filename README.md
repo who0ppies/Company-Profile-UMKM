@@ -30,7 +30,7 @@ Halaman: **Beranda** (`/`), **Koleksi** (`/koleksi`), **Tentang**
 | Reyza Aryo Attala| `zaa657` | UI/UX & Dokumentas |
 | Zakky Revandi| `zakky-cloud` | QA / Tester |
 
-> PM melengkapi nama di atas. Lihat riwayat commit tiap akun sebagai bukti
+> PM melengkapi nama di atas. Lihat riwayat commit tiap akun sebagai bukti.
 > kontribusi individu.
 
 ## Cara Menjalankan
