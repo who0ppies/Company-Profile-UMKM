@@ -33,7 +33,7 @@ Buka http://localhost:3000. Variabel `NEXT_PUBLIC_API_URL` (opsional) mengatur a
 
 - `main` → rilis stabil (merge hanya dari PM).
 - `develop` → branch pengembangan utama.
-- `feature/*` → satu branch per fitur, PR ke `develop` dengan minimal 1 review
+- `feature/*` → satu branch per fitur, PR ke `develop` dengan minimal 1 review.
 - Pesan commit memakai Conventional Commits: `feat:`, `fix:`, `style:`, `docs:`, `refactor:`, `perf:`
 
 ## Anggota Tim & Peran
