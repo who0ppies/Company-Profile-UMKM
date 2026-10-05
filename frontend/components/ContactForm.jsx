@@ -15,7 +15,7 @@ export default function ContactForm() {
     setForm((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     setError("");
 
@@ -29,8 +29,26 @@ export default function ContactForm() {
       return;
     }
 
-    setSent(true);
-    setForm(INITIAL_FORM);
+    try {
+    const response = await fetch("https://formspree.io/f/xljgrygr", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    if (response.ok) {
+      setSent(true);
+      setForm(INITIAL_FORM);
+    } else {
+      setError("Pesan gagal dikirim. Silakan coba lagi.");
+    }
+  } catch (error) {
+    setError("Terjadi kesalahan. Periksa koneksi internet kamu.");
+  }
+
   }
 
   if (sent) {
