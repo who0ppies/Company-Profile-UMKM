@@ -41,9 +41,15 @@ app.get("/api/products", (req, res) => {
     const keyword = String(q).toLowerCase();
     products = products.filter(
       (p) =>
-        String(p.nama || "").toLowerCase().includes(keyword) ||
-        String(p.deskripsi || "").toLowerCase().includes(keyword) ||
-        String(p.kategori || "").toLowerCase().includes(keyword)
+        String(p.nama || "")
+          .toLowerCase()
+          .includes(keyword) ||
+        String(p.deskripsi || "")
+          .toLowerCase()
+          .includes(keyword) ||
+        String(p.kategori || "")
+          .toLowerCase()
+          .includes(keyword),
     );
   }
 
@@ -57,6 +63,52 @@ app.get("/api/products", (req, res) => {
   res.json({
     brand: catalog.brand,
     currency: catalog.currency,
+    total: products.length,
+    data: products,
+  });
+});
+
+app.get("/api/products/filter", (req, res) => {
+  let catalog;
+  try {
+    catalog = loadCatalog();
+  } catch (err) {
+    return res.status(500).json({ message: "Gagal memuat katalog produk." });
+  }
+
+  const badge = String(req.query.badge || "").trim();
+  if (!badge) {
+    return res.status(400).json({ message: "Parameter badge wajib diisi." });
+  }
+
+  const badgeKey = badge.toLowerCase();
+  const availableBadges = [
+    ...new Set(
+      catalog.products.map((product) => product.badge).filter(Boolean),
+    ),
+  ];
+  const isNoBadge = badgeKey === "tanpa badge";
+  const isValidBadge =
+    isNoBadge ||
+    availableBadges.some((value) => value.toLowerCase() === badgeKey);
+
+  if (!isValidBadge) {
+    return res.status(400).json({
+      message: "Badge tidak ditemukan.",
+      availableBadges: [...availableBadges, "Tanpa Badge"],
+    });
+  }
+
+  const products = catalog.products.filter((product) =>
+    isNoBadge ? !product.badge : product.badge.toLowerCase() === badgeKey,
+  );
+
+  res.json({
+    brand: catalog.brand,
+    currency: catalog.currency,
+    badge: isNoBadge
+      ? "Tanpa Badge"
+      : availableBadges.find((value) => value.toLowerCase() === badgeKey),
     total: products.length,
     data: products,
   });
