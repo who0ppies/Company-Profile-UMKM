@@ -40,11 +40,11 @@ Buka http://localhost:3000. Variabel `NEXT_PUBLIC_API_URL` (opsional) mengatur a
 
 | Nama | Peran |
 |------|-------|
-| (PM) | Project Manager |
-| (FE) | Front-End Developer |
-| (BE) | Back-End Developer |
-| (UI/UX) | UI/UX & Dokumentasi |
-| (QA) | QA/Tester |
+| Fadiyah Syafiqah | Project Manager |
+| Wildan Daffi Altair Darmawan | Front-End Developer |
+| Riza Habibi | Back-End Developer |
+| Reyza Aryo Attala | UI/UX & Dokumentasi |
+| Zakky Revandi | QA/Tester |
 
 ## Halaman
 
